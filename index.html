@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get ₹300 Instantly</title>
+  <link rel="shortcut icon" href="https://d2tllrvk6rjrbm.cloudfront.net/sharebw/file/logo.png" type="image/png">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f9fafb, #e5e7eb);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background: #ffffff;
+      max-width: 380px;
+      width: 100%;
+      padding: 30px 24px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .container:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 15px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 6px;
+      color: #1f2937;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: #4b5563;
+      font-size: 14px;
+    }
+
+    .refer-code {
+      background: #f3f4f6;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #111827;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 10px;
+      font-size: 15px;
+      margin-bottom: 20px;
+      outline: none;
+      transition: border 0.2s ease-in-out;
+    }
+
+    input:focus {
+      border-color: #3b82f6;
+    }
+
+    button {
+      background: #2563eb;
+      color: #fff;
+      padding: 14px;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .steps {
+      margin-top: 25px;
+      text-align: left;
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    .steps b {
+      color: #111827;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 420px) {
+      .container {
+        padding: 24px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://d2tllrvk6rjrbm.cloudfront.net/sharebw/file/logo.png" alt="Logo" class="logo" />
+    <h2>BIG WINNER</h2>
+    <p><strong>GET ₹100 INSTANTLY</strong></p>
+
+    <div class="refer-code">Refer Code: 30125882</div>
+
+    <input type="tel" id="mobile" placeholder="Enter your mobile number" maxlength="10" />
+
+    <button onclick="redirect()">Submit</button>
+
+    <div class="steps">
+      <b>How to avail this offer?</b>
+      1. Enter your mobile number<br>
+      2. Click Submit and install the app<br>
+      3. Register to get ₹300 instantly <br>
+      4. Withraw to your bank account <br> (minimum Withraw : 150rs)
+    </div>
+  </div>
+
+  <script>
+    function redirect() {
+      const mobile = document.getElementById("mobile").value.trim();
+      const mobileRegex = /^[6-9]\d{9}$/;
+
+      if (!mobile) {
+        alert("Please enter your mobile number.");
+      } else if (!mobileRegex.test(mobile)) {
+        alert("Please enter a valid 10-digit mobile number.");
+      } else {
+        // ✅ Your actual referral link here:
+        window.location.href = "https://d2tllrvk6rjrbm.cloudfront.net/sharebw/bw_landing.html?ic=30125882";
+      }
+    }
+  </script>
+
+</body>
+</html>
